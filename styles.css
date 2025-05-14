@@ -1,0 +1,57 @@
+/*base styles (mobile-first)*/
+body{
+font-family: sans-serif;
+line-height: 1.5;
+margin: 0;
+padding: 1em;
+}
+.container{
+
+display: flex;
+flex-direction: column;
+
+
+
+}
+.text h1{
+
+font-size: 1.5;
+}
+.responsive-image{
+
+width: 100%;
+height: auto;
+
+}
+.sidebar{
+
+display: none;/*hide sidebar on small screens*/
+
+}
+/*medium screens (tablets)*/
+@media(min-width:600px){
+.container{
+
+flex-direction:row;
+gap:1em;
+}
+
+.text{
+flex:2
+}
+.sidbar{
+display:block;
+flex:1;
+background-color:#f0f0f0f0;
+padding:1rem;
+}
+.text h2{
+font-size:2.5;
+line-height:1.6;
+
+}
+.responsive-image{
+
+content:url("swe.PNG");/*swap image for larger screens*/
+}
+}
